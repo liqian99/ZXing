@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: decode - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP2C66.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/decode.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Work\BarcodeDecode\NewDecode\V1.0.2\src\QR\QRFinderPatternFinder.c"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP2C66.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP2C67.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/decode.pdb" /debug /machine:I386 /out:"Debug/decode.exe" /pdbtype:sept 
+.\Debug\ascii.obj
+.\Debug\BarcodeFormat.obj
+.\Debug\BitArray.obj
+.\Debug\BitMatrix.obj
+.\Debug\BitSource.obj
+.\Debug\CharacterSetECI.obj
+.\Debug\CodaBarReader.obj
+.\Debug\Code128Reader.obj
+.\Debug\Code39Reader.obj
+.\Debug\Code93Reader.obj
+.\Debug\DecodeHints.obj
+.\Debug\DetectorResult.obj
+.\Debug\DiyMalloc.obj
+.\Debug\EAN13Reader.obj
+.\Debug\EAN8Reader.obj
+.\Debug\Euc_cn.obj
+.\Debug\gb2312.obj
+.\Debug\GenericGF.obj
+.\Debug\GenericGFPoly.obj
+.\Debug\GlobalHistogramBinarizer.obj
+.\Debug\GreyscaleLuminanceSource.obj
+.\Debug\GridSampler.obj
+.\Debug\HybridBinarizer.obj
+.\Debug\ITFReader.obj
+.\Debug\main.obj
+.\Debug\MathUtils.obj
+.\Debug\OneDReader.obj
+.\Debug\PerspectiveTransform.obj
+.\Debug\QRAlignmentPattern.obj
+.\Debug\QRAlignmentPatternFinder.obj
+.\Debug\QRBitMatrixParser.obj
+.\Debug\QRCodeReader.obj
+.\Debug\QRDataBlock.obj
+.\Debug\QRDataMask.obj
+.\Debug\QRDecode.obj
+.\Debug\QRDecodedBitStreamParser.obj
+.\Debug\QRDetector.obj
+.\Debug\QRErrorCorrectLevel.obj
+.\Debug\QRFinderPattern.obj
+.\Debug\QRFinderPatternFinder.obj
+.\Debug\QRFinderPatternInfo.obj
+.\Debug\QRFormatInfo.obj
+.\Debug\QRMode.obj
+.\Debug\QRVersion.obj
+.\Debug\ReedSolomonDecoder.obj
+.\Debug\ResultPoint.obj
+.\Debug\StringUtils.obj
+.\Debug\UPCAReader.obj
+.\Debug\UPCEANReader.obj
+.\Debug\UPCEReader.obj
+.\Debug\utfswap.obj
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP2C67.tmp"
+<h3>Output Window</h3>
+Compiling...
+QRFinderPatternFinder.c
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP2D91.tmp" with contents
+[
+/nologo /o"Debug/decode.bsc" 
+.\Debug\ascii.sbr
+.\Debug\BarcodeFormat.sbr
+.\Debug\BitArray.sbr
+.\Debug\BitMatrix.sbr
+.\Debug\BitSource.sbr
+.\Debug\CharacterSetECI.sbr
+.\Debug\CodaBarReader.sbr
+.\Debug\Code128Reader.sbr
+.\Debug\Code39Reader.sbr
+.\Debug\Code93Reader.sbr
+.\Debug\DecodeHints.sbr
+.\Debug\DetectorResult.sbr
+.\Debug\DiyMalloc.sbr
+.\Debug\EAN13Reader.sbr
+.\Debug\EAN8Reader.sbr
+.\Debug\Euc_cn.sbr
+.\Debug\gb2312.sbr
+.\Debug\GenericGF.sbr
+.\Debug\GenericGFPoly.sbr
+.\Debug\GlobalHistogramBinarizer.sbr
+.\Debug\GreyscaleLuminanceSource.sbr
+.\Debug\GridSampler.sbr
+.\Debug\HybridBinarizer.sbr
+.\Debug\ITFReader.sbr
+.\Debug\main.sbr
+.\Debug\MathUtils.sbr
+.\Debug\OneDReader.sbr
+.\Debug\PerspectiveTransform.sbr
+.\Debug\QRAlignmentPattern.sbr
+.\Debug\QRAlignmentPatternFinder.sbr
+.\Debug\QRBitMatrixParser.sbr
+.\Debug\QRCodeReader.sbr
+.\Debug\QRDataBlock.sbr
+.\Debug\QRDataMask.sbr
+.\Debug\QRDecode.sbr
+.\Debug\QRDecodedBitStreamParser.sbr
+.\Debug\QRDetector.sbr
+.\Debug\QRErrorCorrectLevel.sbr
+.\Debug\QRFinderPattern.sbr
+.\Debug\QRFinderPatternFinder.sbr
+.\Debug\QRFinderPatternInfo.sbr
+.\Debug\QRFormatInfo.sbr
+.\Debug\QRMode.sbr
+.\Debug\QRVersion.sbr
+.\Debug\ReedSolomonDecoder.sbr
+.\Debug\ResultPoint.sbr
+.\Debug\StringUtils.sbr
+.\Debug\UPCAReader.sbr
+.\Debug\UPCEANReader.sbr
+.\Debug\UPCEReader.sbr
+.\Debug\utfswap.sbr]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP2D91.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+decode.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

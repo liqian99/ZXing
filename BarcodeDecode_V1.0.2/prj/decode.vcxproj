@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\decode.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\decode.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\decode.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\decode.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\decode.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\decode.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\decode.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\decode.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\iconv\ascii.c" />
+    <ClCompile Include="..\src\BarcodeFormat.c" />
+    <ClCompile Include="..\src\BitArray.c" />
+    <ClCompile Include="..\src\BitMatrix.c" />
+    <ClCompile Include="..\src\BitSource.c" />
+    <ClCompile Include="..\src\CharacterSetECI.c" />
+    <ClCompile Include="..\src\oneD\CodaBarReader.c" />
+    <ClCompile Include="..\src\oneD\Code128Reader.c" />
+    <ClCompile Include="..\src\oneD\Code39Reader.c" />
+    <ClCompile Include="..\src\oneD\Code93Reader.c" />
+    <ClCompile Include="..\src\DecodeHints.c" />
+    <ClCompile Include="..\src\DetectorResult.c" />
+    <ClCompile Include="..\src\DiyMalloc.c" />
+    <ClCompile Include="..\src\oneD\EAN13Reader.c" />
+    <ClCompile Include="..\src\oneD\EAN8Reader.c" />
+    <ClCompile Include="..\src\iconv\Euc_cn.c" />
+    <ClCompile Include="..\src\iconv\gb2312.c" />
+    <ClCompile Include="..\src\GenericGF.c" />
+    <ClCompile Include="..\src\GenericGFPoly.c" />
+    <ClCompile Include="..\src\GlobalHistogramBinarizer.c" />
+    <ClCompile Include="..\src\GreyscaleLuminanceSource.c" />
+    <ClCompile Include="..\src\GridSampler.c" />
+    <ClCompile Include="..\src\HybridBinarizer.c" />
+    <ClCompile Include="..\src\oneD\ITFReader.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="..\src\MathUtils.c" />
+    <ClCompile Include="..\src\oneD\OneDReader.c" />
+    <ClCompile Include="..\src\PerspectiveTransform.c" />
+    <ClCompile Include="..\src\QR\QRAlignmentPattern.c" />
+    <ClCompile Include="..\src\QR\QRAlignmentPatternFinder.c" />
+    <ClCompile Include="..\src\QR\QRBitMatrixParser.c" />
+    <ClCompile Include="..\src\QR\QRCodeReader.c" />
+    <ClCompile Include="..\src\QR\QRDataBlock.c" />
+    <ClCompile Include="..\src\QR\QRDataMask.c" />
+    <ClCompile Include="..\src\QR\QRDecode.c" />
+    <ClCompile Include="..\src\QR\QRDecodedBitStreamParser.c" />
+    <ClCompile Include="..\src\QR\QRDetector.c" />
+    <ClCompile Include="..\src\QR\QRErrorCorrectLevel.c" />
+    <ClCompile Include="..\src\QR\QRFinderPattern.c" />
+    <ClCompile Include="..\src\QR\QRFinderPatternFinder.c" />
+    <ClCompile Include="..\src\QR\QRFinderPatternInfo.c" />
+    <ClCompile Include="..\src\QR\QRFormatInfo.c" />
+    <ClCompile Include="..\src\QR\QRMode.c" />
+    <ClCompile Include="..\src\QR\QRVersion.c" />
+    <ClCompile Include="..\src\ReedSolomonDecoder.c" />
+    <ClCompile Include="..\src\ResultPoint.c" />
+    <ClCompile Include="..\src\StringUtils.c" />
+    <ClCompile Include="..\src\oneD\UPCAReader.c" />
+    <ClCompile Include="..\src\oneD\UPCEANReader.c" />
+    <ClCompile Include="..\src\oneD\UPCEReader.c" />
+    <ClCompile Include="..\src\iconv\utfswap.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\BarcodeFormat.h" />
+    <ClInclude Include="..\src\BaseTypeDef.h" />
+    <ClInclude Include="..\src\BitArray.h" />
+    <ClInclude Include="..\src\BitMatrix.h" />
+    <ClInclude Include="..\src\BitSource.h" />
+    <ClInclude Include="..\src\CharacterSetECI.h" />
+    <ClInclude Include="..\src\oneD\CodaBarReader.h" />
+    <ClInclude Include="..\src\oneD\Code128Reader.h" />
+    <ClInclude Include="..\src\oneD\Code39Reader.h" />
+    <ClInclude Include="..\src\oneD\Code93Reader.h" />
+    <ClInclude Include="..\src\DecodeHints.h" />
+    <ClInclude Include="..\src\DetectorResult.h" />
+    <ClInclude Include="..\src\DiyMalloc.h" />
+    <ClInclude Include="..\src\oneD\EAN13Reader.h" />
+    <ClInclude Include="..\src\oneD\EAN8Reader.h" />
+    <ClInclude Include="..\src\iconv\gb2312.h" />
+    <ClInclude Include="..\src\GenericGF.h" />
+    <ClInclude Include="..\src\GenericGFPoly.h" />
+    <ClInclude Include="..\src\GlobalHistogramBinarizer.h" />
+    <ClInclude Include="..\src\GreyscaleLuminanceSource.h" />
+    <ClInclude Include="..\src\GridSampler.h" />
+    <ClInclude Include="..\src\HybridBinarizer.h" />
+    <ClInclude Include="..\src\oneD\ITFReader.h" />
+    <ClInclude Include="..\src\MathUtils.h" />
+    <ClInclude Include="..\src\oneD\OneDReader.h" />
+    <ClInclude Include="..\src\PerspectiveTransform.h" />
+    <ClInclude Include="..\src\QR\QRAlignmentPattern.h" />
+    <ClInclude Include="..\src\QR\QRAlignmentPatternFinder.h" />
+    <ClInclude Include="..\src\QR\QRBitMatrixParser.h" />
+    <ClInclude Include="..\src\QR\QRCodeReader.h" />
+    <ClInclude Include="..\src\QR\QRDataBlock.h" />
+    <ClInclude Include="..\src\QR\QRDataMask.h" />
+    <ClInclude Include="..\src\QR\QRDecode.h" />
+    <ClInclude Include="..\src\QR\QRDecodedBitStreamParser.h" />
+    <ClInclude Include="..\src\QR\QRDetector.h" />
+    <ClInclude Include="..\src\QR\QRErrorCorrectLevel.h" />
+    <ClInclude Include="..\src\QR\QRFinderPattern.h" />
+    <ClInclude Include="..\src\QR\QRFinderPatternFinder.h" />
+    <ClInclude Include="..\src\QR\QRFinderPatternInfo.h" />
+    <ClInclude Include="..\src\QR\QRFormatInfo.h" />
+    <ClInclude Include="..\src\QR\QRMode.h" />
+    <ClInclude Include="..\src\QR\QRVersion.h" />
+    <ClInclude Include="..\src\ReedSolomonDecoder.h" />
+    <ClInclude Include="..\src\ResultPoint.h" />
+    <ClInclude Include="..\src\StringUtils.h" />
+    <ClInclude Include="..\src\oneD\UPCAReader.h" />
+    <ClInclude Include="..\src\oneD\UPCEANReader.h" />
+    <ClInclude Include="..\src\oneD\UPCEReader.h" />
+    <ClInclude Include="..\src\iconv\utfswap.h" />
+    <ClInclude Include="..\src\iconv\wcmbswap.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
